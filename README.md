@@ -17,7 +17,7 @@ To run the demo locally follow these steps:
 - Add the directory components into your angular2 app.
 - Use it as `<app-ng2-calender></app-ng2-calender>` in the view of the desired component.
 
-### Optios-
+### Options-
 
 - To add event details on some date in the calender create an array and pass it as an input to app-ng2-calender component       which contains the data as:
     ```
