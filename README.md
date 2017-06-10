@@ -20,6 +20,7 @@ To run the demo locally follow these steps:
 ### Optios-
 
 - To add event details on some date in the calender create an array and pass it as an input to app-ng2-calender component       which contains the data as:
+    ```
     public events:events[]=[
     {date:"2017-6-25",price:"Rs.100-Rs.500"},
     {date:"2017-8-11",price:"Rs.100-Rs.500"},
@@ -27,8 +28,9 @@ To run the demo locally follow these steps:
     {date:"2018-1-25",price:"Rs.300-Rs.800"},
     {date:"2018-1-10",price:"Rs.100-Rs.500"}
     ]
-    Now use the events array as `<app-ng2-calender [events]="events"></app-ng2-calender>`
-    This will highlight the date given in array and show the price details in calender.
+    ```
+  Now use the events array as `<app-ng2-calender [events]="events"></app-ng2-calender>`
+  This will highlight the date given in array and show the price details in calender.
 
 - To add event name/label for a particular date you can pass it to the 'label' property as input:
   `<app-ng2-calender [label]="label"></app-ng2-calender>`
