@@ -1,31 +1,37 @@
 # Ng2Calender
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.15.
+A simple calender to show some events on particular dates and to perform functions on that dates. This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.15.
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Demo
 
-## Code scaffolding
+To run the demo locally follow these steps:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
+- Clone or fork this repository
+- Make sure you have node.js installed
+- run npm install to install dependencies
+- run npm start or ng serve to fire up dev server
+- open browser to http://localhost:4200
 
-## Build
+### How to use-
+- Clone or download the repository.
+- Add the directory components into your angular2 app.
+- Use it as `<app-ng2-calender></app-ng2-calender>` in the view of the desired component.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+### Optios-
 
-## Running unit tests
+- To add event details on some date in the calender create an array and pass it as an input to app-ng2-calender component       which contains the data as:
+  `public events:events[]=[
+      {date:"2017-6-25",price:"Rs.100-Rs.500"},
+      {date:"2017-8-11",price:"Rs.100-Rs.500"},
+      {date:"2017-10-11",price:"Rs.250-Rs.700"},
+      {date:"2018-1-25",price:"Rs.300-Rs.800"},
+      {date:"2018-1-10",price:"Rs.100-Rs.500"}
+    ]`
+    `<app-ng2-calender [events]="events"></app-ng2-calender>`
+    This will highlight the date given in array and show the price details in calender.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- To add event name/label for a particular date you can pass it to the 'label' property as input:
+  `<app-ng2-calender [label]="label"></app-ng2-calender>`
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). 
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- To perform some action on click of the date which displays an event add the function "doSomething()" as: 
+ `<app-ng2-calender (clickobject)="doSomething($event)"></app-ng2-calender>`
