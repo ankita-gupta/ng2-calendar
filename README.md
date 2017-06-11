@@ -1,6 +1,6 @@
 # Ng2Calender
 
-A simple calender to show some events on particular dates and to perform functions on that dates. This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.15.
+A simple calender to display some events on particular dates and to perform functions on that dates. This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.15.
 
 ### Demo
 
