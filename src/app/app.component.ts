@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-// import {events} from '/ng2-calender.interface';
+// import {events} from '/ng2-calendar.interface';
 
 @Component({
   selector: 'app-root',

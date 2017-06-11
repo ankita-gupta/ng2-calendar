@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor/globals';
 
-export class Ng2CalenderPage {
+export class Ng2CalendarPage {
   navigateTo() {
     return browser.get('/');
   }

@@ -1,10 +1,10 @@
-import { Ng2CalenderPage } from './app.po';
+import { Ng2CalendarPage } from './app.po';
 
-describe('ng2-calender App', function() {
-  let page: Ng2CalenderPage;
+describe('ng2-calendar App', function() {
+  let page: Ng2CalendarPage;
 
   beforeEach(() => {
-    page = new Ng2CalenderPage();
+    page = new Ng2CalendarPage();
   });
 
   it('should display message saying app works', () => {

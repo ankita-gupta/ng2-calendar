@@ -29,10 +29,10 @@ export class DemoComponent implements OnInit {
      this.currentMonth = currentDate.getMonth();
      this.currentYear = currentDate.getFullYear();
 
-     this.showCalender();
+     this.showCalendar();
   }
 
-  showCalender(){
+  showCalendar(){
     let firstDayOfCurrentMonth = new Date(this.currentYear,this.currentMonth, 1).getDay();
 
 
@@ -131,7 +131,7 @@ export class DemoComponent implements OnInit {
     else{
           this.currentMonth = this.currentMonth - 1;
     }
-    this.showCalender();
+    this.showCalendar();
   }
   nextMonth(){
     this.dates = [];
@@ -142,7 +142,7 @@ export class DemoComponent implements OnInit {
     else{
       this.currentMonth = this.currentMonth +1;
     }
-    this.showCalender();
+    this.showCalendar();
   }
   checkPrice(date){
     this.events.map((value) => {
